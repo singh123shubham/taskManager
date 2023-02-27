@@ -1,10 +1,13 @@
 {
+  "homepage": "http://singh123shubham.github.io/taskManager",
   "name": "taskmanager",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon app.js",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,8 +17,5 @@
     "express": "^4.18.1",
     "mongoose": "^6.6.3",
     "nodemon": "^2.0.20"
-  },
-  "devDependencies": {
-    "gh-pages": "^5.0.0"
   }
 }
